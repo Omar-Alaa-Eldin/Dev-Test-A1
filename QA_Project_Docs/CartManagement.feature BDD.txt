@@ -1,0 +1,55 @@
+Feature: Cart Management
+  As a registered or guest user
+  I want to add, view, update, and remove products in my cart
+  So that I can manage the items I intend to purchase
+
+  @add_cart
+  Scenario: Add multiple products to the cart
+    Given the user launches the browser
+    And navigates to "http://automationexercise.com"
+    When the user clicks on the "Products" button
+    And adds the first product to the cart
+    And clicks "Continue Shopping"
+    And adds the second product to the cart
+    And clicks "View Cart"
+    Then both products should be visible in the cart
+    And their prices, quantity, and total amount should be displayed correctly
+
+  @update_quantity
+  Scenario: Update quantity of product in the cart
+    Given the user launches the browser
+    And navigates to "http://automationexercise.com"
+    When the user views any product’s details
+    And increases the quantity to 4
+    And clicks the "Add to Cart" button
+    And clicks "View Cart"
+    Then the product should appear in the cart with a quantity of 4
+    And the total price should reflect the updated quantity
+
+  @remove_cart
+  Scenario: Remove a product from the cart
+    Given the user launches the browser
+    And navigates to "http://automationexercise.com"
+    And adds products to the cart
+    When the user clicks the "Cart" button
+    And removes one product by clicking the "X" button
+    Then the product should no longer appear in the cart
+
+  @subscribe_footer
+  Scenario: Subscribe from the cart page footer
+    Given the user launches the browser
+    And navigates to "http://automationexercise.com"
+    And clicks the "Cart" button
+    When the user scrolls to the footer
+    And enters an email address in the subscription input
+    And clicks the arrow button
+    Then a success message "You have been successfully subscribed!" should be visible
+
+  @recommended_item
+  Scenario: Add recommended product to cart
+    Given the user launches the browser
+    And navigates to "http://automationexercise.com"
+    When the user scrolls to the bottom of the page
+    And clicks "Add to Cart" for a recommended item
+    And clicks "View Cart"
+    Then the recommended product should appear in the cart

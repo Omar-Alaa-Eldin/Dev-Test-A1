@@ -1,0 +1,109 @@
+Feature: User Sign-Up functionality
+
+  As a new visitor
+  I want to create a new account on the automation practice website
+  So that I can log in and access user features
+
+  Background:
+    Given the user is on the home page of the automation practice website
+    And the "Signup / Login" option is visible in the navigation bar
+
+  Scenario: Successful user registration with valid details
+    When the user clicks on the "Signup / Login" link
+    And the user enters a name "Abanoub Youssef" and email "noubboyyyy@gmail.com"
+    And clicks the "Sign Up" button
+    Then the user should be redirected to the "Enter Account Information" page
+
+    When the user selects the title "Mr."
+    And enters the password "Abanoub@123"
+    And selects the date of birth as "18" "March" "1994"
+    And checks the boxes "Sign up for our newsletter!" and "Receive special offers from our partners!"
+    And fills in the address information:
+      | Field          | Value                  |
+      | First name     | Abanoub                |
+      | Last name      | Youssef                |
+      | Company        | ABC                    |
+      | Address        | 123 Main Street        |
+      | Address 2      | Apt 4C                 |
+      | Country        | Indeia                  |
+      | State          | ay7ga                  |
+      | City           | ay7ga                  |
+      | Zipcode        | 99999                  |
+      | Mobile Number  | 9876543210             |
+    And clicks the "Create Account" button
+    Then the account should be created successfully
+    And the user should see the confirmation message "Account Created!"
+    And the user should be redirected to the home page as a logged-in user
+    And the header should display "Logged in as Abanoub Youssef"
+
+  Scenario: Sign-up with an already registered email address
+    When the user clicks on the "Signup / Login" link
+    And enters a name "Abanoub" and an existing email "noubboyyyy@gmail.com"
+    And clicks the "Sign Up" button
+    Then the user should see an error message "Email Address already exist!"
+
+  Scenario: Sign-up with invalid email format
+    When the user clicks on the "Signup / Login" link
+    And enters a name "Abanoub" and an invalid email "noubboyyyy@@gmail"
+    And clicks the "Sign Up" button
+    Then the user should see a validation error for invalid email
+
+  Scenario: Sign-up with missing name
+    When the user clicks on the "Signup / Login" link
+    And leaves the name field blank
+    And enters the email "newuser@gmail.com"
+    And clicks the "Sign Up" button
+    Then the user should see an error message "Name is required!"
+
+
+/*************************************************************************/
+
+Feature: Contact Us Form
+
+  As a user of the website
+  I want to send a message through the Contact Us form
+  So that I can share my feedback or inquiries with the support team
+
+  Background:
+    Given the user is on the home page of the automation practice website
+    And the "Contact us" link is visible in the navigation bar
+
+  Scenario: Successful submission of contact form with valid details
+    When the user clicks on the "Contact us" link
+    Then the user should be redirected to the "Contact Us" page
+    And the form title "GET IN TOUCH" should be visible
+
+    When the user enters the following contact details:
+      | Field   | Value                     |
+      | Name    | Abanoub Youssef           |
+      | Email   | noubboyyyy@gmail.com      |
+      | Subject | Issue with my order       |
+      | Message | Please check my order status. |
+    And the user uploads a file "order_screenshot.png"
+    And clicks the "Submit" button
+    Then a success message "Success! Your details have been submitted successfully." should appear
+    And the user should be able to navigate back to the home page
+
+  Scenario: Contact form submission with missing mandatory fields
+    When the user clicks on the "Contact us" link
+    And leaves the "Name" and "Email" fields empty
+    And enters "Website feedback" in the "Subject" field
+    And enters "Great website experience!" in the "Message" field
+    And clicks the "Submit" button
+    Then the user should see validation errors for missing "Name" and "Email"
+
+  Scenario: Contact form submission with invalid email format
+    When the user clicks on the "Contact us" link
+    And enters "Abanoub" in the "Name" field
+    And enters "invalid-email-format" in the "Email" field
+    And enters "Subject test" in the "Subject" field
+    And enters "Test message" in the "Message" field
+    And clicks the "Submit" button
+    Then the user should see an error message "Please enter a valid email address."
+
+  Scenario: Cancel contact form submission
+    When the user clicks on the "Contact us" link
+    And fills all fields correctly
+    But decides not to click "Submit"
+    Then no form should be submitted
+    And the user should remain on the same "Contact Us" page

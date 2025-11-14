@@ -1,0 +1,948 @@
+{
+	"id": "16088a40-b354-45ae-9f6a-e31e5bcace3e",
+	"name": "Automation Exercise",
+	"timestamp": "2025-11-07T21:02:33.931Z",
+	"collection_id": "48858246-5c44b0d8-5a68-4882-9292-bcc8d18ed731",
+	"folder_id": 0,
+	"environment_id": "48858246-6ce88e30-77ae-4e64-bf91-51f730bfbfec",
+	"totalPass": 96,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-07T21:02:12.152Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a19cfaad-facc-4b76-b85d-ef72961d22f8",
+			"name": "API_1 - GET All Products List",
+			"url": "https://automationexercise.com//api/productsList",
+			"time": 961,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Response has expected JSON structure": true,
+				"Products array exists and has items": true,
+				"Each product has required fields": true,
+				"Sample product 'Blue Top' exists with correct data": true,
+				"⚠️  Content-Type should be application/json (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has expected JSON structure": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products array exists and has items": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each product has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Sample product 'Blue Top' exists with correct data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type should be application/json (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				961
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Response has expected JSON structure": true,
+					"Products array exists and has items": true,
+					"Each product has required fields": true,
+					"Sample product 'Blue Top' exists with correct data": true,
+					"⚠️  Content-Type should be application/json (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "197335dc-32da-430c-9df9-f9f77c575323",
+			"name": "API_2 - POST All Products List",
+			"url": "https://automationexercise.com//api/productsList",
+			"time": 317,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 405 - Method Not Allowed": true,
+				"Error message indicates method not supported": true,
+				"No product data in error response": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 405 - Method Not Allowed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates method not supported": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No product data in error response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				317
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 405 - Method Not Allowed": true,
+					"Error message indicates method not supported": true,
+					"No product data in error response": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "7c324b3e-d26d-4098-9779-70c44898e694",
+			"name": "API_5 - POST Search Product - Valid",
+			"url": "https://automationexercise.com//api/searchProduct",
+			"time": 325,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - Success": true,
+				"Search results contain products array": true,
+				"Search returns relevant products for the search term": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - Success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search results contain products array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search returns relevant products for the search term": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				325
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - Success": true,
+					"Search results contain products array": true,
+					"Search returns relevant products for the search term": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "c1c4166b-adf4-4702-a14f-b7a3e0aa8865",
+			"name": "API_6 - POST Search Product - Missing Parameter",
+			"url": "https://automationexercise.com//api/searchProduct",
+			"time": 320,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 400 - Bad Request": true,
+				"Error message indicates missing parameter": true,
+				"No product data in error response": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 400 - Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates missing parameter": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No product data in error response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				320
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 400 - Bad Request": true,
+					"Error message indicates missing parameter": true,
+					"No product data in error response": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "44055f16-6f53-4042-8ce6-f764209a80f1",
+			"name": "API_3 - GET All Brands List",
+			"url": "https://automationexercise.com//api/brandsList",
+			"time": 296,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - Success": true,
+				"Brands array exists and has items": true,
+				"Each brand has required fields": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - Success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Brands array exists and has items": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each brand has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				296
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - Success": true,
+					"Brands array exists and has items": true,
+					"Each brand has required fields": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "ba350daa-ba37-4778-935f-ec21f3ecd07a",
+			"name": "API_4 - PUT All Brands List",
+			"url": "https://automationexercise.com//api/brandsList",
+			"time": 301,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 405 - Method Not Allowed": true,
+				"Error message indicates method not supported": true,
+				"No brand data in error response": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 405 - Method Not Allowed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates method not supported": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No brand data in error response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				301
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 405 - Method Not Allowed": true,
+					"Error message indicates method not supported": true,
+					"No brand data in error response": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "af145b7f-276e-4cc2-9fd2-06463c545ddf",
+			"name": "API_7 - POST Verify Login - Valid",
+			"url": "https://automationexercise.com//api/verifyLogin",
+			"time": 319,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - Login Success": true,
+				"Success message indicates user exists": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - Login Success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success message indicates user exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				319
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - Login Success": true,
+					"Success message indicates user exists": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "0adf8695-f263-4b7b-910a-c214850e2cae",
+			"name": "API_8 - POST Verify Login - Missing Email",
+			"url": "https://automationexercise.com//api/verifyLogin",
+			"time": 336,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 400 - Bad Request": true,
+				"Error message indicates missing email parameter": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 400 - Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates missing email parameter": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				336
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 400 - Bad Request": true,
+					"Error message indicates missing email parameter": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "3fee7659-21d6-432e-a73d-07d480ac1dce",
+			"name": "API_9 - DELETE Verify Login",
+			"url": "https://automationexercise.com//api/verifyLogin",
+			"time": 301,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 405 - Method Not Allowed": true,
+				"Error message indicates method not supported": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 405 - Method Not Allowed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates method not supported": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				301
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 405 - Method Not Allowed": true,
+					"Error message indicates method not supported": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "02e01de6-179b-4c35-9001-020ef5833e30",
+			"name": "API_10 - POST Verify Login - Invalid",
+			"url": "https://automationexercise.com//api/verifyLogin",
+			"time": 301,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 404 - User Not Found": true,
+				"Error message indicates user not found": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 404 - User Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message indicates user not found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				301
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 404 - User Not Found": true,
+					"Error message indicates user not found": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "c4a33e53-3f12-4e3a-b9df-9ff999f756b8",
+			"name": "API_11 - POST Create User Account",
+			"url": "https://automationexercise.com//api/createAccount",
+			"time": 384,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 201 - User Created": true,
+				"Success message indicates user created": true,
+				"Store temporary account data for cleanup": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 201 - User Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success message indicates user created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store temporary account data for cleanup": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				384
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 201 - User Created": true,
+					"Success message indicates user created": true,
+					"Store temporary account data for cleanup": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "75fd4c1c-8cca-4b34-97fe-4ffdf650330e",
+			"name": "API_13 - PUT Update User Account",
+			"url": "https://automationexercise.com//api/updateAccount",
+			"time": 504,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - User Updated": true,
+				"Success message indicates user updated": true,
+				"Using temporary account data from API_11": true,
+				"⚠️  Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - User Updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success message indicates user updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Using temporary account data from API_11": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				504
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - User Updated": true,
+					"Success message indicates user updated": true,
+					"Using temporary account data from API_11": true,
+					"⚠️  Content-Type check (Warning)": true
+				}
+			]
+		},
+		{
+			"id": "8caeb9a2-9d09-462f-9050-d997069ea2d8",
+			"name": "API_12 - DELETE User Account",
+			"url": "https://automationexercise.com//api/deleteAccount",
+			"time": 324,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - Account Deleted": true,
+				"Success message indicates account deleted": true,
+				"Using temporary account data from API_11": true,
+				"⚠️  Content-Type check (Warning)": true,
+				"Cleanup environment variables": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - Account Deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success message indicates account deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Using temporary account data from API_11": {
+					"pass": 1,
+					"fail": 0
+				},
+				"⚠️  Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cleanup environment variables": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				324
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - Account Deleted": true,
+					"Success message indicates account deleted": true,
+					"Using temporary account data from API_11": true,
+					"⚠️  Content-Type check (Warning)": true,
+					"Cleanup environment variables": true
+				}
+			]
+		},
+		{
+			"id": "f4e91768-084c-474d-9fd7-9f2cfc272019",
+			"name": "API_14 - GET User Detail by Email",
+			"url": "https://automationexercise.com//api/getUserDetailByEmail?email=omarmiro33345@gmail.com",
+			"time": 304,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body is valid JSON": true,
+				"Business logic responseCode is 200 - User Details Retrieved": true,
+				"Response contains user object": true,
+				"User object has basic identification fields": true,
+				"▲ Content-Type check (Warning)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Business logic responseCode is 200 - User Details Retrieved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains user object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User object has basic identification fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"▲ Content-Type check (Warning)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				304
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body is valid JSON": true,
+					"Business logic responseCode is 200 - User Details Retrieved": true,
+					"Response contains user object": true,
+					"User object has basic identification fields": true,
+					"▲ Content-Type check (Warning)": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5293,
+	"collection": {
+		"requests": [
+			{
+				"id": "a19cfaad-facc-4b76-b85d-ef72961d22f8",
+				"method": "GET"
+			},
+			{
+				"id": "197335dc-32da-430c-9df9-f9f77c575323",
+				"method": "POST"
+			},
+			{
+				"id": "7c324b3e-d26d-4098-9779-70c44898e694",
+				"method": "POST"
+			},
+			{
+				"id": "c1c4166b-adf4-4702-a14f-b7a3e0aa8865",
+				"method": "POST"
+			},
+			{
+				"id": "44055f16-6f53-4042-8ce6-f764209a80f1",
+				"method": "GET"
+			},
+			{
+				"id": "ba350daa-ba37-4778-935f-ec21f3ecd07a",
+				"method": "PUT"
+			},
+			{
+				"id": "af145b7f-276e-4cc2-9fd2-06463c545ddf",
+				"method": "POST"
+			},
+			{
+				"id": "0adf8695-f263-4b7b-910a-c214850e2cae",
+				"method": "POST"
+			},
+			{
+				"id": "3fee7659-21d6-432e-a73d-07d480ac1dce",
+				"method": "DELETE"
+			},
+			{
+				"id": "02e01de6-179b-4c35-9001-020ef5833e30",
+				"method": "POST"
+			},
+			{
+				"id": "c4a33e53-3f12-4e3a-b9df-9ff999f756b8",
+				"method": "POST"
+			},
+			{
+				"id": "75fd4c1c-8cca-4b34-97fe-4ffdf650330e",
+				"method": "PUT"
+			},
+			{
+				"id": "8caeb9a2-9d09-462f-9050-d997069ea2d8",
+				"method": "DELETE"
+			},
+			{
+				"id": "f4e91768-084c-474d-9fd7-9f2cfc272019",
+				"method": "GET"
+			}
+		]
+	}
+}
