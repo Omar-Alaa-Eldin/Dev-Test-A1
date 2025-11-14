@@ -31,6 +31,10 @@ This repository contains comprehensive testing artifacts for the Automation Exer
 | Traceability | [Traceability_Matrix/](./Text_Reports/Traceability_Matrix) | Requirement-to-test case mapping |
 
 ## Repository Structure
+
+The following tree diagram represents the high-level file and directory structure of the project:
+
+\`\`\`
 ├── 📁 Evidence/ # Test evidence and screenshots
 ├── 📁 QA_Project_Docs/ # Project documentation
 │ ├── Epic&User Stories.docx
@@ -54,6 +58,7 @@ This repository contains comprehensive testing artifacts for the Automation Exer
 ├── 📄 sign-up&contact-use_BDD.txt # BDD scenarios
 ├── 📄 pom.xml # Maven configuration
 └── 📄 README.md # This file
+\`\`\`
 
 
 ## Test Artifacts Description
